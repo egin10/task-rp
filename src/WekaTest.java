@@ -21,22 +21,24 @@ public class WekaTest {
     //membaca data latih
         Instances dataLatih = new Instances(new BufferedReader(new FileReader("dataLatih.arff")));
         dataLatih.setClassIndex(dataLatih.numAttributes() - 1);
-        System.out.println("Data Latih : " + dataLatih);
+        //System.out.println("Data Latih : " + dataLatih);
     
     //membaca data uji
         Instances dataUji = new Instances(new BufferedReader(new FileReader("dataUji.arff")));
         dataUji.setClassIndex(dataUji.numAttributes() - 1);
-        System.out.println("Data Uji : " + dataUji);
+        //System.out.println("Data Uji : " + dataUji);
     
     //membangun model
         LinearRegression model = new LinearRegression();
         model.buildClassifier(dataLatih); 
-        System.out.println(model); 
+        //System.out.println(model); 
     
     //menentukan hasil  instance terakhir dari data
-        Instance dicari = dataUji.lastInstance();
-        String dataUJI = dicari.toString();
-        double jumlahCacat = model.classifyInstance(dicari);
-        System.out.println("Kecacatan produksi jika suhu : "+ dataUJI + " adalah "+ jumlahCacat);
+        for (int i = 0; i < dataUji.size(); i++) {
+            Instance dicari = dataUji.instance(i);
+            String dataUJI = dicari.toString();
+            double jumlahCacat = model.classifyInstance(dicari);
+            System.out.println("Kecacatan produksi jika suhu : "+ dataUJI + " adalah "+ jumlahCacat);
+        }
     }
 }
