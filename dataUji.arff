@@ -1,0 +1,11 @@
+@RELATION produksi
+
+@ATTRIBUTE suhu NUMERIC
+@ATTRIBUTE jumlahCacat NUMERIC
+
+@DATA
+24,?
+25,?
+26,?
+27,?
+28,?
