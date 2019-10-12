@@ -15,6 +15,7 @@ import weka.core.Instances;
 public class WekaTest {
     /**
      * @param args the command line arguments
+     * @throws java.lang.Exception
      */
     public static void main(String args[]) throws Exception {
     
@@ -26,7 +27,7 @@ public class WekaTest {
     //membaca data uji
         Instances dataUji = new Instances(new BufferedReader(new FileReader("dataUji.arff")));
         dataUji.setClassIndex(dataUji.numAttributes() - 1);
-        //System.out.println("Data Uji : " + dataUji);
+//        System.out.println("Data Uji : " + dataUji);
     
     //membangun model
         LinearRegression model = new LinearRegression();

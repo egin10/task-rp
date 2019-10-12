@@ -1,0 +1,25 @@
+@relation Cuaca_predicted
+
+@attribute Cuaca {Cerah,Mendung,Hujan}
+@attribute Suhu {85,80,83,70,68,65,64,69,75,72,81,71}
+@attribute Kelembaban_Udara {85,90,86,96,80,65,95,70,75,91}
+@attribute Berangin {TIDAK,YA}
+@attribute 'prediction margin' numeric
+@attribute 'predicted Bermain_Tenis' {TIDAK,YA}
+@attribute Bermain_Tenis {TIDAK,YA}
+
+@data
+Cerah,85,85,TIDAK,0.62005,TIDAK,TIDAK
+Cerah,80,90,YA,0.601634,YA,YA
+Mendung,83,86,TIDAK,0.867302,YA,YA
+Hujan,70,96,TIDAK,0.579167,YA,YA
+Hujan,68,80,TIDAK,0.698283,YA,YA
+Hujan,65,70,YA,0.331058,TIDAK,TIDAK
+Mendung,64,65,YA,0.819026,YA,YA
+Cerah,72,95,TIDAK,0.361415,TIDAK,TIDAK
+Cerah,69,70,TIDAK,0.475666,YA,YA
+Hujan,75,80,TIDAK,0.788205,YA,YA
+Cerah,75,70,YA,0.501916,YA,YA
+Mendung,72,90,YA,0.765766,YA,YA
+Mendung,81,75,TIDAK,0.867302,YA,YA
+Hujan,71,91,YA,0.713031,TIDAK,TIDAK
