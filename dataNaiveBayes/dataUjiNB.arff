@@ -1,0 +1,11 @@
+@RELATION produksi
+
+@ATTRIBUTE suhu NUMERIC
+@ATTRIBUTE class {10, 5, 3, 6, 4, 9, 11, 13, 7}
+
+@DATA
+24,?
+25,?
+26,?
+27,?
+28,?

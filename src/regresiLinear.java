@@ -10,9 +10,9 @@ import weka.core.Instance;
 import weka.core.Instances;
 /**
  *
- * @author AbonSapi
+ * @author Ginanjar.S.B
  */
-public class WekaTest {
+public class regresiLinear {
     /**
      * @param args the command line arguments
      * @throws java.lang.Exception
@@ -20,12 +20,12 @@ public class WekaTest {
     public static void main(String args[]) throws Exception {
     
     //membaca data latih
-        Instances dataLatih = new Instances(new BufferedReader(new FileReader("dataLatih.arff")));
+        Instances dataLatih = new Instances(new BufferedReader(new FileReader("dataRegresiLinear/dataLatih.arff")));
         dataLatih.setClassIndex(dataLatih.numAttributes() - 1);
         //System.out.println("Data Latih : " + dataLatih);
     
     //membaca data uji
-        Instances dataUji = new Instances(new BufferedReader(new FileReader("dataUji.arff")));
+        Instances dataUji = new Instances(new BufferedReader(new FileReader("dataRegresiLinear/dataUji.arff")));
         dataUji.setClassIndex(dataUji.numAttributes() - 1);
 //        System.out.println("Data Uji : " + dataUji);
     

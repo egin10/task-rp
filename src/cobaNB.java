@@ -32,7 +32,7 @@ public class cobaNB {
      */
     public static void main(String[] args) throws IOException, Exception {
         // TODO code application logic here
-                Instances trainDataset = new Instances(new BufferedReader(new FileReader("data/dataTrain.arff")));
+                Instances trainDataset = new Instances(new BufferedReader(new FileReader("dataNaiveBayes/dataLatihNBGanda.arff")));
 		//set class index to the last attribute
 		trainDataset.setClassIndex(trainDataset.numAttributes()-1);
 		//get number of classes
@@ -48,7 +48,7 @@ public class cobaNB {
 		NaiveBayes nb = new NaiveBayes();
 		nb.buildClassifier(trainDataset);
 		//load new dataset
-		Instances testDataset  = new Instances(new BufferedReader(new FileReader("data/dataTest.arff")));	
+		Instances testDataset  = new Instances(new BufferedReader(new FileReader("dataNaiveBayes/dataUjiNBGanda.arff")));	
 		//set class index to the last attribute
 		testDataset.setClassIndex(testDataset.numAttributes()-1);
 		//loop through the new dataset and make predictions

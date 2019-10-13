@@ -1,0 +1,23 @@
+@RELATION produksi
+
+@ATTRIBUTE suhu NUMERIC
+@ATTRIBUTE kelembapan NUMERIC
+@ATTRIBUTE masabahan NUMERIC
+@ATTRIBUTE jumlahCacat NUMERIC
+
+@DATA
+24, 42, 56, 10
+22, 50, 61, 5
+21, 43, 53, 6
+20, 18, 64, 3
+22, 40, 69, 6
+19, 19, 59, 4
+20, 20, 55, 5
+23, 24, 62, 9
+24, 34, 61, 11
+25, 31, 53, 13
+21, 11, 50, 7
+20, 22, 56, 4
+20, 17, 63, 6
+19, 14, 50, 3
+25, 35, 55, 12
